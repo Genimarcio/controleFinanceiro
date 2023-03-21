@@ -16,56 +16,42 @@
       <a href="index.html">Voltar</a>
     </div>
   </header>
-
   <main>
-      <table border="1" class="marco">
-
+    <table>
+      <thead>
         <tr>
-          <th colspan='2'>Mês</th>
-          <th>Março</th>
-          <th>Vencimento</th>
-          <th>Status</th>
+          <th>Item</th>
+          <th>Quantidade</th>
         </tr>
-
+      </thead>
+      <tbody>
         <tr>
-          <td></td>
-          <td><strong>Categorias</strong></td>
-          <td><strong>Valores</strong></td>
-          <td><strong>Dia</strong></td>
-          <td><strong>Valores</strong></td>
+          <td>Item 1</td>
+          <td><input type="number" name="quantidade" onchange="calcularTotal()"></td>
         </tr>
-        
         <tr>
-          <td rowspan="4">Receitas</td>
-          <td>Salário</td>
-          <td><input type="text" placeholder="R$ 4.100,00"></td>
-          <td>01</td>
-          <td><input type="text" placeholder="R$ 0,00"></td>
+          <td>Item 2</td>
+          <td><input type="number" name="quantidade" onchange="calcularTotal()"></td>
         </tr>
-
         <tr>
-          <td>Auxílio Brasil</td>
-          <td>R$ 600,00</td>
-          <td>30</td>          
-          <td>R$ 0,00</td>          
+          <td>Item 3</td>
+          <td><input type="number" name="quantidade" onchange="calcularTotal()"></td>
         </tr>
-
         <tr>
-          <td>Outros</td>
-          <td>0,00</td>
-          <td>0</td>          
-          <td>R$ 0,00</td>          
+          <td>Item 4</td>
+          <td><input type="number" name="quantidade" onchange="calcularTotal()"></td>
         </tr>
-
         <tr>
-          <td>Total</td>
-          <td>26</td>
-          <td>0</td>
-          <td>R$ 0,00</td>
+          <td><strong>Total</strong></td>
+          <td><span id="total">0</span></td>
         </tr>
+      </tbody>
+    </table>
 
-      </table>
-  </main>
+    <script src="main.js"></script>
+
+
+
 
 </body>
 

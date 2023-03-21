@@ -13,6 +13,7 @@
     font-family: 'Fira Code', monospace;
 }
 
+
 .telaInicial a{
     color:white;
     text-decoration: none;
@@ -76,10 +77,19 @@ tr{
     text-align: center;
 }
 
+td{
+    padding: 5px 20px;
+}
+
 td input{
     border: none;
+    outline: none;
     text-align: center;
     padding: 5px 10px;
+}
+
+td input:hover{
+    border: none;
 }
 
 main{
