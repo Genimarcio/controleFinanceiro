@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="HeaderPlanilha flex justify-between text-xl px-2 py-2">
+    <h1>Controle Financeiro</h1>
+
+    <div>
+      <a href="../index.html">Voltar</a>
+    </div>
+  </header>
+  <main class="flex items-center justify-center">
+    <div class="w-full overflow-hidden rounded-lg shadow-xs">
+      <div class="w-full overflow-x-auto">
+        <table class="w-full whitespace-no-wrap">
+          <thead>
+            <tr
+              class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b bg-gray-100"
+            >
+              <th class="px-4 py-3">Produto</th>
+              <th class="px-4 py-3">Quantidade</th>
+              <th class="px-4 py-3">Preço Unitário</th>
+              <th class="px-4 py-3">Total</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y">
+            <tr>
+              <td class="px-4 py-3">
+                <input
+                  type="text"
+                  class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  placeholder="Digite o nome do produto"
+                />
+              </td>
+              <td class="px-4 py-3">
+                <input
+                  type="number"
+                  class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  placeholder="Digite a quantidade"
+                />
+              </td>
+              <td class="px-4 py-3">
+                <input
+                  type="number"
+                  class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  placeholder="Digite o preço unitário"
+                />
+              </td>
+              <td class="px-4 py-3">
+                <input
+                  type="number"
+                  class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  placeholder="Total"
+                  readonly
+                />
+              </td>
+            </tr>
+            <!-- outras linhas da tabela aqui -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+    <script src="./main.js"></script>
+
+
+
+
+</body>
+
+</html>
